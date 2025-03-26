@@ -1,0 +1,102 @@
+body{
+    background-image: url(./images/hey.jpg);
+    background-repeat: initial;
+}
+header {
+    width: 79.0009rem;
+    padding: 0;
+    margin: 0;
+    height: 2rem;
+    text-align: right;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+main{
+    font-style: italic;
+    font: bolder;
+    font-size:xx-large ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 2rem;
+    margin: 15px;
+    padding:92px;
+}
+#div1{
+    width: 10rem;
+    height: 4rem;
+    align-items:center;
+    justify-content: space-between;
+    border: solid black;
+    display: flex;
+    margin-bottom: 0;
+    margin: 5px;
+    padding: 9px;
+}
+#div2{
+    width: 10rem;
+    height: 4rem;
+    align-items:center;
+    justify-content: space-between;
+    border: solid black;
+    display: flex;
+    margin-bottom: 0;
+    margin: 5px;
+    padding: 9px;
+}
+#div3{
+    width: 10rem;
+    height: 4rem;
+    align-items:center;
+    justify-content: space-between;
+    border: solid black;
+    display: flex;
+    margin-bottom: 0;
+    margin: 5px;
+    padding: 9px;
+}
+#div4{
+    width: 10rem;
+    height: 4rem;
+    align-items:center;
+    justify-content: space-between;
+    border: solid black;
+    display: flex;
+    margin-bottom: 0;
+    margin: 5px;
+    padding: 9px;
+}
+.form{
+    height: 20rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    align-items: center;
+    height:1rem ;
+    font-size: large;
+    font-family:'Times New Roman';
+}
+button{
+    background-color:rgb(228, 193, 211);
+    border-radius: 5px;
+}
+footer{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    text-align: right;
+}
+img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 55px;
+    display: block;
+    align-items: right;
+}
