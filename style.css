@@ -83,6 +83,13 @@ button{
     background-color:rgb(228, 193, 211);
     border-radius: 5px;
 }
+section img{
+    height: 5rem;
+    width: 5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 footer{
     display: flex;
     align-items: right;
