@@ -20,49 +20,45 @@ main{
     justify-content: center;
     text-align: center;
     height: 2rem;
-    margin: 15px;
-    padding:92px;
+    margin: 2px;
+    padding:95px;
 }
-#div1{
-    width: 10rem;
-    height: 4rem;
+#see1{
+    width: 5rem;
+    height: 2rem;
     align-items:center;
     justify-content: space-between;
     border: solid black;
-    display: flex;
     margin-bottom: 0;
     margin: 5px;
     padding: 9px;
 }
-#div2{
-    width: 10rem;
-    height: 4rem;
+#see2{
+    width: 5rem;
+    height: 2rem;
     align-items:center;
     justify-content: space-between;
     border: solid black;
-    display: flex;
     margin-bottom: 0;
     margin: 5px;
     padding: 9px;
 }
-#div3{
-    width: 10rem;
-    height: 4rem;
+#see3{
+    width: 5rem;
+    height: 2rem;
     align-items:center;
     justify-content: space-between;
     border: solid black;
-    display: flex;
     margin-bottom: 0;
     margin: 5px;
     padding: 9px;
 }
-#div4{
-    width: 10rem;
-    height: 4rem;
+#see4{
+    width: 5rem;
+    height: 2rem;
     align-items:center;
     justify-content: space-between;
     border: solid black;
-    display: flex;
     margin-bottom: 0;
     margin: 5px;
     padding: 9px;
