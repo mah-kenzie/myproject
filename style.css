@@ -28,7 +28,7 @@ main{
     width: 17rem;
     background-color: aquamarine;
     border-radius: 2rem;
-
+    display: block;
 }
 #see1{
     width: 5rem;
@@ -45,7 +45,7 @@ main{
     width: 17rem;
     background-color: aquamarine;
     border-radius: 2rem;
-
+    display: block;
 }
 #see2{
     width: 5rem;
@@ -62,7 +62,7 @@ main{
     width: 17rem;
     background-color: aquamarine;
     border-radius: 2rem;
-
+    display: block;
 }
 #see3{
     width: 5rem;
@@ -79,7 +79,7 @@ main{
     width: 17rem;
     background-color: aquamarine;
     border-radius: 2rem;
-
+    display:block;
 }
 #see4{
     width: 5rem;
