@@ -1,6 +1,7 @@
 body{
     background-image: url(./images/hey.jpg);
     background-repeat: initial;
+    height: 80rem;
 }
 header {
     width: 79.0009rem;
@@ -22,13 +23,17 @@ main{
     height: 2rem;
     margin: 2px;
     padding:95px;
+    text-decoration: wavy;
+}
+.contain{
+    display: flex;
+    gap: 29px;
 }
 .div1{
     height: 15rem;
     width: 17rem;
-    background-color: aquamarine;
+    background-color: rgb(252, 223, 249);
     border-radius: 2rem;
-    display: block;
 }
 #see1{
     width: 5rem;
@@ -43,9 +48,8 @@ main{
 .div2{
     height: 15rem;
     width: 17rem;
-    background-color: aquamarine;
+    background-color: rgb(252, 223, 249);
     border-radius: 2rem;
-    display: block;
 }
 #see2{
     width: 5rem;
@@ -60,9 +64,8 @@ main{
 .div3{
     height: 15rem;
     width: 17rem;
-    background-color: aquamarine;
+    background-color: rgb(252, 223, 249);
     border-radius: 2rem;
-    display: block;
 }
 #see3{
     width: 5rem;
@@ -77,9 +80,8 @@ main{
 .div4{
     height: 15rem;
     width: 17rem;
-    background-color: aquamarine;
+    background-color: rgb(252, 223, 249);
     border-radius: 2rem;
-    display:block;
 }
 #see4{
     width: 5rem;
@@ -123,6 +125,8 @@ footer{
     align-items: right;
     justify-content: right;
     text-align: right;
+    padding: 200px;
+    margin: 500px;
 }
 img{
     height: 2rem;
