@@ -34,6 +34,10 @@ main{
     width: 17rem;
     background-color: rgb(252, 223, 249);
     border-radius: 2rem;
+    transition: width 2s, height 4s;
+}
+.div1 :hover{
+  background-color: aquamarine;
 }
 #see1{
     width: 5rem;
@@ -51,6 +55,9 @@ main{
     background-color: rgb(252, 223, 249);
     border-radius: 2rem;
 }
+.div :hover{
+    background-color: aquamarine;
+  }
 #see2{
     width: 5rem;
     height: 2rem;
@@ -67,6 +74,9 @@ main{
     background-color: rgb(252, 223, 249);
     border-radius: 2rem;
 }
+.div3 :hover{
+    background-color: aquamarine;
+  }
 #see3{
     width: 5rem;
     height: 2rem;
@@ -83,6 +93,9 @@ main{
     background-color: rgb(252, 223, 249);
     border-radius: 2rem;
 }
+.div4 :hover{
+    background-color: aquamarine;
+  }
 #see4{
     width: 5rem;
     height: 2rem;
