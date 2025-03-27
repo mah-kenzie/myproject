@@ -21,8 +21,8 @@ main{
     justify-content: center;
     text-align: center;
     height: 2rem;
-    margin: 2px;
-    padding:95px;
+    margin: 0.5px;
+    padding:105px;
     text-decoration: wavy;
 }
 .contain{
@@ -55,7 +55,7 @@ main{
     background-color: rgb(252, 223, 249);
     border-radius: 2rem;
 }
-.div :hover{
+.div2 :hover{
     background-color: aquamarine;
   }
 #see2{
