@@ -11,6 +11,15 @@ header {
     position: sticky;
     top: 0;
 }
+.emmy{
+    display: flex;
+    gap: 50px;
+}
+header img{
+    border-radius: 5rem;
+    height: 5rem;
+    width: 5rem;
+}
 main{
     background-color: rgb(255, 218, 238);
     font-style: italic;
@@ -19,9 +28,7 @@ main{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0.5px;
     padding:75px;
-    text-decoration: wavy;
 }
 .form{
     height: 1.5rem;
@@ -44,13 +51,21 @@ button{
     border-radius: 5px;
 }
 .mid{
-    height: 22rem;
+    height: 27rem;
+    font-size: medium;
+    text-align: center;
+}
+strong{
+    color: blue;
 }
 img{
     height: 17rem;
     width: 12rem;
     border-radius: 22px;
     align-items: center;
-    padding: 3rem;
+    gap:15rem;
     margin:0rem ;
+}
+a{
+    text-decoration: none;
 }
