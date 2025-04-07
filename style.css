@@ -1,17 +1,18 @@
+body{
+    background-color: rgb(255, 218, 238); ;
+}
 header {
     width: 79.0009rem;
     padding: 0;
     margin: 0;
     height: 2rem;
-    text-align: right;
+    text-align:justify;
     justify-content: space-between;
     position: sticky;
     top: 0;
 }
 main{
-    background-image: url(./images/hey.jpg);
-    background-repeat:initial;
-    height: 10rem;
+    background-color: rgb(255, 218, 238);
     font-style: italic;
     font: bolder;
     font-size:xx-large ;
@@ -22,89 +23,12 @@ main{
     padding:75px;
     text-decoration: wavy;
 }
-.contain{
-    display: flex;
-    gap: 29px;
-}
-.div1{
-    height: 15rem;
-    width: 17rem;
-    border-radius: 2rem;
-    transition: width 2s, height 4s;
-}
-.div1 :hover{
-  background-color: aquamarine;
-}
-#see1{
-    width: 5rem;
-    height: 2rem;
-    align-items:center;
-    justify-content: space-between;
-    border: solid black;
-    margin-bottom: 0;
-    margin: 5px;
-    padding: 9px;
-}
-.div2{
-    height: 15rem;
-    width: 17rem;
-    border-radius: 2rem;
-}
-.div2 :hover{
-    background-color: aquamarine;
-  }
-#see2{
-    width: 5rem;
-    height: 2rem;
-    align-items:center;
-    justify-content: space-between;
-    border: solid black;
-    margin-bottom: 0;
-    margin: 5px;
-    padding: 9px;
-}
-.div3{
-    height: 15rem;
-    width: 17rem;
-    border-radius: 2rem;
-}
-.div3 :hover{
-    background-color: aquamarine;
-  }
-#see3{
-    width: 5rem;
-    height: 2rem;
-    align-items:center;
-    justify-content: space-between;
-    border: solid black;
-    margin-bottom: 0;
-    margin: 5px;
-    padding: 9px;
-}
-.div4{
-    height: 15rem;
-    width: 17rem;
-    border-radius: 2rem;
-}
-.div4 :hover{
-    background-color: aquamarine;
-  }
-#see4{
-    width: 5rem;
-    height: 2rem;
-    align-items:center;
-    justify-content: space-between;
-    border: solid black;
-    margin-bottom: 0;
-    margin: 5px;
-    padding: 9px;
-}
 .form{
-    height: 20rem;
+    height: 1.5rem;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 50px;
+    margin: 30px;
 }
 label{
     display: block;
@@ -119,10 +43,13 @@ button{
     background-color:rgb(228, 193, 211);
     border-radius: 5px;
 }
+.mid{
+    height: 22rem;
+}
 img{
-    height: 7rem;
-    width: 7rem;
-    border-radius: 55px;
-    display: block;
+    height: 17rem;
+    width: 12rem;
+    border-radius: 22px;
     align-items: center;
+    padding: 3rem;
 }
