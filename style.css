@@ -1,7 +1,7 @@
 body{
     background-image: url(./images/hey.jpg);
-    background-repeat: initial;
-    height: 80rem;
+    background-repeat:initial;
+    height: 30rem;
 }
 header {
     width: 79.0009rem;
@@ -126,25 +126,10 @@ button{
     background-color:rgb(228, 193, 211);
     border-radius: 5px;
 }
-section img{
-    height: 5rem;
-    width: 5rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-footer{
-    display: flex;
-    align-items: right;
-    justify-content: right;
-    text-align: right;
-    padding: 200px;
-    margin: 500px;
-}
 img{
-    height: 2rem;
-    width: 2rem;
+    height: 7rem;
+    width: 7rem;
     border-radius: 55px;
     display: block;
-    align-items: right;
+    align-items: center;
 }
