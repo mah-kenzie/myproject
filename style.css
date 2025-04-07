@@ -51,7 +51,7 @@ button{
     border-radius: 5px;
 }
 .mid{
-    height: 27rem;
+    height: 20rem;
     font-size: medium;
     text-align: center;
 }
@@ -60,7 +60,7 @@ strong{
 }
 img{
     height: 17rem;
-    width: 12rem;
+    width: 15rem;
     border-radius: 22px;
     align-items: center;
     gap:15rem;
