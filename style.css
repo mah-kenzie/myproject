@@ -20,11 +20,6 @@ header img{
     height: 5rem;
     width: 5rem;
 }
-.party{
-    text-align:bottom;
-    align-items: left;
-    justify-content: left;
-}
 main{
     background-color: rgb(255, 218, 238);
     font-style: italic;
@@ -43,17 +38,15 @@ main{
     margin: 30px;
 }
 label{
-    display: block;
+    display:flow-root;
     margin-bottom: 5px;
     font-weight: bold;
-    align-items: center;
-    height:1rem ;
-    font-size: large;
+    align-items:baseline;
     font-family:'Times New Roman';
+    border-radius: 9px;
 }
 button{
     background-color:rgb(228, 193, 211);
-    border-radius: 5px;
 }
 .mid{
     height: 20rem;
@@ -63,9 +56,12 @@ button{
 strong{
     color: blue;
 }
+strong h1{
+    color: rgb(233, 118, 179);
+}
 img{
     height: 17rem;
-    width: 15rem;
+    width: 19rem;
     border-radius: 22px;
     align-items: center;
     gap:15rem;
