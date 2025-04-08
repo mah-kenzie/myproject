@@ -8,7 +8,7 @@ header {
     height: 2rem;
     text-align:justify;
     justify-content: space-between;
-    position: sticky;
+    position:static;
     top: 0;
 }
 .emmy{
@@ -19,6 +19,11 @@ header img{
     border-radius: 5rem;
     height: 5rem;
     width: 5rem;
+}
+.party{
+    text-align:bottom;
+    align-items: left;
+    justify-content: left;
 }
 main{
     background-color: rgb(255, 218, 238);
