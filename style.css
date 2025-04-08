@@ -70,3 +70,8 @@ img{
 a{
     text-decoration: none;
 }
+small img{
+    height: 2rem;
+    width: 3rem;
+    border-radius: 0;
+}
