@@ -51,25 +51,109 @@
     strong h1{
     color: rgb(233, 118, 179);
     }
+    .testify{
+        display: flex;
+        height: 10rem;
+        border-radius: 15px;
+    }
+    .testify h1{
+        color: rgb(0, 0, 0);
+        font-style: italic;
+    }
+    #cop{
+        width: 15rem;
+    }
+    #photo{
+        width: 19.5rem;
+    }
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: palevioletred;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color:crimson;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: pink;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
 </head>
 <body class="party">
     <header>
-        <div class="emmy"><img src="./images/2floooo.jpg"><a href="index.html">HOME</a>
-             <a href="aboutus.html">ABOUT</a>
-             <a href="services.html">SERVICES</a><br>
+        <div class="emmy"><img src="./images/2floooo.jpg">
+         <div class="dropdown">
+            <button class="dropbtn">GO TO</button>
+            <div class="dropdown-content">
+           <a href="home.html">HOME</a> 
+            <a href="aboutus.html">ABOUT</a>
+           <a href="services.html">SERVICES</a>
+         </div>
      </div>
     </header>
     <main>
         <strong><h1>PARTY ADVOCATE</h1></strong>
     <h2>We create <br>
-   you celebrate</h2>
+   you celebrate</h2><br>
+   <h4>It's Simple, you have an event to plan<br>
+   and we have the <strong>BLUEPRINTS</strong></h4>
     </main>
     <section class="mid">
-        It's Simple, you have an event to plan<br>
-             and we have the <strong>BLUEPRINTS</strong><br>
-             <div>
-                <div></div>
+             <div class="testify">
+                <div id="hbd"><h1>Birthday party<br></h1>
+                <img src="./images/cakee.jpg"><br>
+                We help plan your kids birthday party,<br>
+                as well as yours, in an organization like ours.<br>
+                Your party is rest assured.
+                </div>
+                <div id="wed"><h1>Wedding<br></h1>
+                    <img src="./images/kiiiiiiii.jpg"><br>
+                    We help plan your wedding making it a memorable,<br>
+                   and eventful moment for you and your lucky partner,<br>
+                    in an organization like ours.<br>
+                    Your party is rest assured.</div>
+                <div id="cop"><h1>Coperate Event<br></h1>
+                    <img src="./images/evvvve.jpg"><br>
+                    We help plan your seminers, conventions e.t.c,<br>
+                   with as much refreshments as possible,<br>
+                    in an organization like ours.<br>
+                    Your party is rest assured.</div>
+                <div id="photo"><h1>Photo gallery<br></h1>
+                    <img src="./images/prom.jpg"><br>
+                   Looking forward to taking photo shots, framings and the likes?<br>
+                   well we've got you covered, because in an organization like ours.<br>
+                    Your photo is rest assured.</div>
              </div>
      </section>
 </body>

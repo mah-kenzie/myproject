@@ -30,15 +30,20 @@ main{
     text-align: center;
     padding:75px;
 }
+main h4{
+    font-size: small;
+    font: 800;
+}
 .form{
     height: 1.5rem;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 30px;
+    display:inline-flexbox;
 }
 label{
-    display:flow-root;
+    display:inline-flexbox;
     margin-bottom: 5px;
     font-weight: bold;
     align-items:baseline;
@@ -75,3 +80,12 @@ small img{
     width: 3rem;
     border-radius: 0;
 }
+input[type=location], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
