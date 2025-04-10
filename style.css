@@ -91,6 +91,10 @@ small img{
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border-radius: 45rem;
+    align-items: right;
+    justify-content: right;
+    text-align: right;
   }
   .dropdown-content {
     display: none;
