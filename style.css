@@ -46,7 +46,7 @@ main h4{
     display:block;
     margin-bottom: 5px;
     font-weight: bold;
-    align-items:baseline;
+    align-items:center;
     font-family:'Times New Roman';
     border-radius: 9px;
 }
