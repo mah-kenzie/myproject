@@ -55,6 +55,7 @@ img{
     align-items: center;
     gap:15rem;
     margin:0rem ;
+    padding: 5%;
 }
 a{
     text-decoration: none;
@@ -109,4 +110,9 @@ small img{
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+  footer{
+    text-align: left;
+    align-items: left;
+    justify-content: left;
   }
