@@ -34,22 +34,6 @@ main h4{
     font-size: small;
     font: 800;
 }
-.form{
-    height: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 30px;
-    display:block;
-}
-#booking form{
-    display:block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    align-items:center;
-    font-family:'Times New Roman';
-    border-radius: 9px;
-}
 button{
     background-color:rgb(228, 193, 211);
 }
