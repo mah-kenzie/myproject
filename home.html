@@ -3,37 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Event Planner</title>
+    <title>Event Planner</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="party">
-    <header>
-        <div class="emmy"><img src="./images/64f20bca-d7fe-400b-8773-f5cc9c629c50.png" alt="event Planner">
-            <div class="dropdown">
-            <button class="dropbtn">GO TO</button>
-            <div class="dropdown-content">
-            <a href="home.html">HOME</a>
-             <a href="testimonies.html">TESTIMONIES</a>
-             <a href="aboutus.html">ABOUT</a>
-             <a href="services.html">SERVICES</a>
-             <a href="book.html">BOOK NOW</a>
-             </div>
-     </div>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./images/64f20bca-d7fe-400b-8773-f5cc9c629c50.png" alt="Party Advocate Logo">
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="testimonies.html">TESTIMONIES</a></li>
+                    <li><a href="contact.html">BOOK NOW</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <strong><h1>PARTY ADVOCATE</h1></strong>
-    <h2>We create <br>
-   you celebrate</h2>
+
+    <!-- Main Content -->
+    <main class="hero">
+        <h1>PARTY ADVOCATE</h1>
+        <h2>We create,<br>you celebrate</h2>
     </main>
-    <section class="mid">
-        <img src="./images/bhdddd.jpg">
-        <img src="./images/marry.jpeg">
-        <img src="./images/ball.jpg">
-        <img src="./images/Karaoke-birthday-party.jpg">
-    <footer>
-        <p>&copy; 2025 Party Advocate. All rights reserved.</p>
+
+    <!-- Image Gallery -->
+    <section class="gallery">
+        <a href="birthday-party.html">
+            <figure>
+                <img src="./images/bhdddd.jpg" alt="Birthday Party Celebration">
+                <figcaption>Birthday Party</figcaption>
+            </figure>
+        </a>
+        <a href="wedding.html">
+            <figure>
+                <img src="./images/marry.jpeg" alt="Wedding Ceremony">
+                <figcaption>Wedding</figcaption>
+            </figure>
+        </a>
+        <a href="corporate-event.html">
+            <figure>
+                <img src="./images/ball.jpg" alt="Corporate Event">
+                <figcaption>Corporate Event</figcaption>
+            </figure>
+        </a>
+        <a href="karaoke-party.html">
+            <figure>
+                <img src="./images/Karaoke-birthday-party.jpg" alt="Karaoke Birthday Party">
+                <figcaption>Karaoke Party</figcaption>
+            </figure>
+        </a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; <span id="yearID"></span> Party Advocate. All rights reserved.</p>
+        <script>
+            // Dynamically update the year
+            document.getElementById("yearID").textContent = new Date().getFullYear();
+        </script>
     </footer>
-       <!-- Link to your JavaScript file -->
-       <script src="script.js"></script>
 </body>
 </html>

@@ -3,208 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testimonies</title>
-    <style>body{
-        background-color: rgb(255, 218, 238); ;
-    }
-    header {
-        width: 79.0009rem;
-        padding: 0;
-        margin: 0;
-        height: 2rem;
-        text-align:justify;
-        justify-content: space-between;
-        position:static;
-        top: 0;
-    }
-    .emmy{
-        display: flex;
-        gap: 50px;
-    }
-    header img{
-        border-radius: 5rem;
-        height: 5rem;
-        width: 5rem;
-    }
-    main{
-        background-color: rgb(255, 218, 238);
-        font-style: italic;
-        font: bolder;
-        font-size:xx-large ;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding:75px;
-    }
-    .mid{
-    height: 20rem;
-    font-size: medium;
-    text-align: center;
-    display: flex;
-    }
-    img{
-    height: 17rem;
-    width: 19rem;
-    border-radius: 22px;
-    align-items: center;
-    gap:15rem;
-    margin:0rem ;
-    }
-    strong{
-    color: blue;
-    }
-    a{
-    text-decoration: none;
-    }
-    strong h1{
-    color: rgb(233, 118, 179);
-    }
-    .testify{
-        display: flex;
-        height: 10rem;
-        border-radius: 15px;
-        width: 19rem;
-        border-radius: 22px;
-        align-items: center;
-        padding: 5%;
+    <title>Party Advocate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    }
-    .testify h1{
-        color: rgb(0, 0, 0);
-        font-style: italic;
-    }
-    .dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropbtn {
-  background-color: palevioletred;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 45rem;
-  align-items: right;
-  justify-content: right;
-  text-align: right;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f9f9f9, #e0eafc);
+            color: #333;
+            padding-top: 8rem; /* Add padding to account for the fixed header */
+        }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown:hover .dropbtn {
-  background-color:crimson;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: pink;
-  min-width: 160px;
-  padding: 12px 16px;
-  z-index: 1;
-}
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.hbd{
-  display: flex;
-}
-.wed{
-  display: flex;
-  padding: 105px;
-}
-.cop{
-  display: flex;
-}
-.photo{
-  display: flex;
-}
-</style>
+        /* Header Styling */
+        .header {
+            position: fixed; /* Make the header static */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            width: 50px; /* Adjust the size of the logo */
+            height: auto;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4a4a4a;
+            margin: 0;
+        }
+
+        .nav-links ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #777;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .testimonials h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #4a4a4a;
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Individual Testimonial Styling */
+        .testimonial {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .testimonial h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #4a4a4a;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .testimonial blockquote {
+            font-size: 1rem;
+            color: #555;
+            margin: 1rem 0;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            font-size: 1rem;
+            color: #777;
+            margin-top: 1rem;
+        }
+
+        /* Footer Styling */
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
 </head>
-<body class="party">
-    <header>
-        <div class="emmy"><img src="./images/64f20bca-d7fe-400b-8773-f5cc9c629c50.png">
-         <div class="dropdown">
-            <button class="dropbtn">GO TO</button>
-            <div class="dropdown-content">
-           <a href="home.html">HOME</a> 
-            <a href="aboutus.html">ABOUT</a>
-           <a href="services.html">SERVICES</a>
-           <a href="book.html">BOOK NOW</a>
-         </div>
-     </div>
-    </header>
-    <main>
-        <strong><h1>PARTY ADVOCATE</h1></strong>
-   <h4>It's Simple, you have an event to plan<br>
-   and we have the <strong>BLUEPRINTS</strong></h4>
-    </main>
-    <section class="mid">
-             <div class="testify">
-                <div id="hbd"><h1>Birthday party<br></h1>
-                <img src="./images/cakee.jpg"><br>
-                "The birthday party for my daughter, Phoebe, was absolutely amazing! <br>
-                The Party Room for Kids The room looked sensational, <br>
-                with a grand entrance that made the guests feel so special. <br>
-                Phoebe and I were standing inside, <br>
-                witnessing the doors opening and a shower of sprinkles falling upon them <br>
-                – it was magical! Everyone had a fantastic time,<br>
-                 and Phoebe's birthday was truly unforgettable. <br>
-                Thank you for making it such a memorable occasion,"<br>
-                                                       <br> "Elizabeth Howard"
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/64f20bca-d7fe-400b-8773-f5cc9c629c50.png" alt="Party Advocate Logo">
+                    <h1>PARTY ADVOCATE</h1>
                 </div>
-                <div id="wed"><h1>Wedding<br></h1>
-                    <img src="./images/marry.jpeg"><br>
-                    Attending Emma and Jake’s wedding was truly special. The ceremony was held outdoors<br>
-             under a flower-laden arch, with sunlight filtering through the trees.<br>
-             Emma looked radiant in her gown, and Jake’s face lit up as he saw his bride for the first time.<br>
-             Their heartfelt vows brought tears to everyone’s eyes, and the reception that followed was <br>
-            filled with laughter, dancing, and joy. From their first dance to the sparkler send-off, <br>
-            it was a perfect celebration of love and unity. Leaving that night, I couldn’t help but smile—<br>
-            what a beautiful reminder of how powerful and uplifting love can be!<br>
-                                                     <br> "Emily Brook"
-            <div>
-                <div id="cop"><h1>Coperate Event<br></h1>
-                    <img src="./images/banquent.jpg"><br>
-                    The corporate networking event was a great success. Held at a modern rooftop venue, <br>
-                    it combined meaningful conversations with moments of inspiration. <br>
-                    The guest speaker shared valuable insights on leadership,<br>
-                     and the award presentations celebrated standout team achievements.<br>
-                     Between bites of delicious food and lively discussions,<br>
-                      I connected with colleagues and partners, strengthening<br>
-                     relationships and exchanging ideas. By the end of the evening, I left feeling motivated and <br>
-                    proud to be part of such a driven and innovative community.<br>
-                                                                <br>"Scout Mcall"
-                <div id="photo"><h1>Photo gallery<br></h1>
-                    <img src="./images/ggggs.jpg"><br>
-                    Attending the photo gallery event was such a memorable experience.<br>
-                    The venue was beautifully lit, <br>
-                   showcasing stunning photographs that told <br>
-                   powerful stories—each image capturing raw emotions and unique perspectives.<br>
-                    I loved how the artists shared the inspiration behind their work,<br>
-                    giving deeper meaning to every piece. Conversations with fellow attendees <br>
-                   added to the evening’s charm, as we exchanged thoughts and interpretations.<br>
-                    Walking through the gallery felt like stepping into different worlds, leaving me inspired and <br>
-                   appreciative of the artistry and creativity on display.<br>
-                   <br>                                        "Xavier Prince"
-                  </div>
-                </div>
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="aboutus.html">ABOUT </a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="testimonies.html">TESTIMONIES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-     </section>
-        <!-- Link to your JavaScript file -->
-    <script src="script.js"></script>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <p>We turn your events into unforgettable experiences.</p>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonial-grid">
+                    <article class="testimonial">
+                        <h3>Birthday Party</h3>
+                        <img src="./images/cakee.jpg" alt="Birthday Cake">
+                        <blockquote>
+                            "The birthday party for my daughter, Phoebe, was absolutely amazing! 
+                            The Party Room for Kids looked sensational, with a grand entrance that made the guests feel so special."
+                        </blockquote>
+                        <p>— Elizabeth Howard</p>
+                    </article>
+
+                    <article class="testimonial">
+                        <h3>Wedding</h3>
+                        <img src="./images/marry.jpeg" alt="Wedding Ceremony">
+                        <blockquote>
+                            Attending Emma and Jake’s wedding was truly special. The ceremony was held outdoors under a flower-laden arch, 
+                            with sunlight filtering through the trees.
+                        </blockquote>
+                        <p>— Emily Brook</p>
+                    </article>
+
+                    <article class="testimonial">
+                        <h3>Corporate Event</h3>
+                        <img src="./images/banquent.jpg" alt="Corporate Networking Event">
+                        <blockquote>
+                            The corporate networking event was a great success. Held at a modern rooftop venue, 
+                            it combined meaningful conversations with moments of inspiration.
+                        </blockquote>
+                        <p>— Scout Mcall</p>
+                    </article>
+
+                    <article class="testimonial">
+                        <h3>Photo Gallery</h3>
+                        <img src="./images/ggggs.jpg" alt="Art Gallery Event">
+                        <blockquote>
+                            Attending the photo gallery event was such a memorable experience. The venue was beautifully lit, 
+                            showcasing stunning photographs that told powerful stories.
+                        </blockquote>
+                        <p>— Xavier Prince</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="yearID"></span> Party Advocate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to Dynamically Update Year -->
+    <script>
+        document.getElementById("yearID").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

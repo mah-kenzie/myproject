@@ -3,168 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
-    <style>body{
-        background-color: rgb(255, 218, 238); ;
-    }
-    header {
-        width: 79.0009rem;
-        padding: 0;
-        margin: 0;
-        height: 2rem;
-        text-align:justify;
-        justify-content: space-between;
-        position:static;
-        top: 0;
-    }
-    .emmy{
-        display: flex;
-        gap: 50px;
-    }
-    header img{
-        border-radius: 5rem;
-        height: 5rem;
-        width: 5rem;
-    }
-    main{
-        background-color: rgb(255, 218, 238);
-        font-style: italic;
-        font: bolder;
-        font-size:xx-large ;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding:75px;
-    }
-    .mid{
-    height: 20rem;
-    font-size: medium;
-    text-align: center;
-    display: flex;
-    }
-    img{
-    height: 17rem;
-    width: 19rem;
-    border-radius: 22px;
-    align-items: center;
-    gap:15rem;
-    margin:0rem ;
-    }
-    strong{
-    color: blue;
-    }
-    a{
-    text-decoration: none;
-    }
-    strong h1{
-    color: rgb(233, 118, 179);
-    }
-    .dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropbtn {
-  background-color: palevioletred;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 45rem;
-  align-items: right;
-  justify-content: right;
-  text-align: right;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown:hover .dropbtn {
-  background-color:crimson;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: pink;
-  min-width: 160px;
-  padding: 12px 16px;
-  z-index: 1;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #fff8f8; /* Soft pink background */
+            color: #333;
+            padding-top: 8rem; /* Add padding to account for the fixed header */
+        }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-section h2{
-    font: bolder;
-    color: black;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-display: center;
-}
-.about{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 191, 204);
-    font: icon;
-}
-img{
-    width: 55rem;
-    height: 35rem;
-}
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header Styling */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4a4a4a;
+            margin-left: 1rem;
+        }
+
+        .nav-links ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #e91e63; /* Pink hover effect */
+        }
+
+        /* Main Content */
+        main {
+            text-align: center;
+            padding: 5rem 1rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        main h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        main h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        /* About Section */
+        .about {
+            padding: 4rem 1rem;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4a4a4a;
+            margin-bottom: 2rem;
+        }
+
+        .about p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .about-item {
+            position: relative;
+            margin-bottom: 4rem;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .about-item img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9; /* Moderate height with a 16:9 aspect ratio */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            transform: translateY(100%); /* Initially hidden below the image */
+            transition: transform 0.3s ease;
+        }
+
+        .about-item:hover .caption {
+            transform: translateY(0); /* Slide up on hover */
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #4a4a4a;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
     </style>
 </head>
-<body class="party">
-        <header>
-            <div class="emmy"><img src="./images/64f20bca-d7fe-400b-8773-f5cc9c629c50.png" alt="event Planner">
-                <div class="dropdown">
-                <button class="dropbtn">GO TO</button>
-                <div class="dropdown-content">
-                <a href="home.html">HOME</a>
-                 <a href="testimonies.html">TESTIMONIES</a>
-                 <a href="services.html">SERVICES</a>
-                 <a href="book.html">BOOK NOW</a>
-                 </div>
-         </div>
-        </header>
-        <main>
-            <strong><h1>PARTY ADVOCATE</h1></strong>
-        <h2>We create <br>
-       you celebrate</h2>
-        </main>
-        <section class="about"><h2>About Us</h2>
-            <h3>
-            <p>Welcome to PARTY ADVOCATE EVENTS, where elegance meets innovation and style knows no bounds. <br>Born from a passion for redefining sophistication, we are curators of the extraordinary—a collective of dreamers, creators, <br>and tastemakers dedicated to crafting experiences that leave you breathless.</p><br>
-            
-            From intimate soirées to grand galas, every event we touch is infused with<br> our signature blend of glamour and refinement. Scroll through some of our most unforgettable moments <br>below—where lights dance, laughter fills the air, and memories are made in high style.<br>
-            
-            <img src="./images/55d6e958-7516-4c3c-be3d-84d2595ab94e.png"><br> 
-            - A chic rooftop cocktail party under string lights. <br> 
-            - An opulent wedding with cascading florals and candlelit tables. <br> 
-            - A modern corporate gala featuring sleek decor and bold accents.<br>  
-            - A whimsical garden brunch adorned with pastel hues and luxe details. <br> 
-            <br>
-            Every piece, every detail, every moment with us is designed to inspire. Whether it’s fashion, design, or lifestyle,<br> we don’t just follow trends; we set them. Because here, glamour isn’t an afterthought—it’s our legacy. <br> 
-            
-            Step into our world, where your story becomes timeless.</h3></section>
-            <footer>
-                <p>&copy; 2025 Party Advocate. All rights reserved.</p>
-            </footer>
-               <!-- Link to your JavaScript file -->
-    <script src="script.js"></script>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/64f20bca-d7fe-400b-8773-f5cc9c629c50.png" alt="Party Advocate Logo">
+                    <h1>PARTY ADVOCATE</h1>
+                </div>
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="aboutus.html">ABOUT</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="testimonies.html">TESTIMONIES</a></li>
+                        <li><a href="contact.html">BOOK NOW</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>PARTY ADVOCATE</h1>
+        <h2>We create,<br>you celebrate</h2>
+    </main>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Welcome to PARTY ADVOCATE EVENTS, where elegance meets innovation and style knows no bounds. Born from a passion for redefining sophistication, we are curators of the extraordinary—a collective of dreamers, creators, and tastemakers dedicated to crafting experiences that leave you breathless.</p>
+        <p>From intimate soirées to grand galas, every event we touch is infused with our signature blend of glamour and refinement. Scroll through some of our most unforgettable moments below—where lights dance, laughter fills the air, and memories are made in high style.</p>
+
+        <div class="container">
+            <div class="about-item">
+                <img src="./images/chic.jpg" alt="Chic Rooftop Cocktail Party">
+                <div class="caption">A chic rooftop cocktail party under string lights.</div>
+            </div>
+            <div class="about-item">
+                <img src="./images/wed.jpg" alt="Opulent Wedding">
+                <div class="caption">An opulent wedding with cascading florals and candlelit tables.</div>
+            </div>
+            <div class="about-item">
+                <img src="./images/coprate.jpg" alt="Corporate Gala">
+                <div class="caption">A modern corporate gala featuring sleek decor and bold accents.</div>
+            </div>
+            <div class="about-item">
+                <img src="./images/Garden Brunch.jpg" alt="Garden Brunch">
+                <div class="caption">A whimsical garden brunch adorned with pastel hues and luxe details.</div>
+            </div>
+        </div>
+
+        <p>Every piece, every detail, every moment with us is designed to inspire. Whether it’s fashion, design, or lifestyle, we don’t just follow trends; we set them. Because here, glamour isn’t an afterthought—it’s our legacy.</p>
+        <p>Step into our world, where your story becomes timeless.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="yearID"></span> Party Advocate. All rights reserved.</p>
+        <script>
+            document.getElementById("yearID").textContent = new Date().getFullYear();
+        </script>
+    </footer>
 </body>
 </html>

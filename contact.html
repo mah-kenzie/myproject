@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERVICES</title>
+    <title>Book Now</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         /* General Reset */
@@ -98,52 +98,77 @@
             font-weight: 600;
         }
 
-       /* Services Section */
-.serve {
-    padding: 4rem 1rem;
-    text-align: center;
-}
+        /* Booking Form */
+        .form {
+            max-width: 600px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
 
-.serve h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #4a4a4a;
-    margin-bottom: 2rem;
-}
+        .form h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4a4a4a;
+            margin-bottom: 2rem;
+        }
 
-.service-item {
-    position: relative;
-    margin-bottom: 4rem;
-    overflow: hidden;
-    border-radius: 10px;
-}
+        .form-step {
+            margin-bottom: 2rem;
+        }
 
-.service-item img {
-    width: 100%;
-    height: auto; /* Height adjusts automatically based on the width */
-    aspect-ratio: 16 / 9; /* Ensures a moderate height with a 16:9 aspect ratio */
-    object-fit: cover; /* Ensures images maintain aspect ratio without distortion */
-    border-radius: 10px;
-}
+        .form-step h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #e91e63;
+            margin-bottom: 1rem;
+        }
 
-.caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 600;
-    transform: translateY(100%); /* Initially hidden below the image */
-    transition: transform 0.3s ease;
-}
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #4a4a4a;
+        }
 
-.service-item:hover .caption {
-    transform: translateY(0); /* Slide up on hover */
-}
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"] {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button,
+        input[type="submit"] {
+            padding: 1rem 2rem;
+            background-color: #e91e63;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover,
+        input[type="submit"]:hover {
+            background-color: #d81b60;
+        }
+
+        .disabled {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
         /* Footer Styling */
         footer {
             text-align: center;
@@ -170,10 +195,10 @@
                 <nav class="nav-links">
                     <ul>
                         <li><a href="home.html">HOME</a></li>
-                        <li><a href="aboutus.html">ABOUT</a></li>
+                        <li><a href="aboutus.html">ABOUT </a></li>
                         <li><a href="services.html">SERVICES</a></li>
                         <li><a href="testimonies.html">TESTIMONIES</a></li>
-                        <li><a href="contact.html">BOOK NOW</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -186,31 +211,38 @@
         <h2>We create,<br>you celebrate</h2>
     </main>
 
-    <!-- Services Section -->
-    <section class="serve">
-        <h1>OUR SERVICES</h1>
-        <div class="container">
-            <div class="service-item">
-                <img src="./images/lighting-for-outdoor-table-settings.jpg" alt="Event Planning">
-                <div class="caption">EVENT PLANNING & DESIGN</div>
+    <!-- Booking Form -->
+    <section class="form">
+        <form id="booking-form">
+            <!-- Step 1 -->
+            <h1>BOOK NOW</h1>
+            <div id="step-1" class="form-step">
+                <h3>Step 1: Personal Information</h3>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="button" id="next-btn">Next</button>
             </div>
-            <div class="service-item">
-                <img src="./images/boho.jpg" alt="Wedding Production">
-                <div class="caption">WEDDING PRODUCTIONS</div>
+
+            <!-- Step 2 -->
+            <div id="step-2" class="form-step" style="display: none;">
+                <h3>Step 2: Contact Details</h3>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="button" id="prev-btn">Previous</button>
+                <input type="submit" value="Submit" id="submit-btn">
             </div>
-            <div class="service-item">
-                <img src="./images/meet.jpg" alt="Corporate Event">
-                <div class="caption">CORPORATE EVENTS</div>
-            </div>
-            <div class="service-item">
-                <img src="./images/ppppp.jpg" alt="Luxury Party">
-                <div class="caption">LUXURY PARTIES & SOCIAL GATHERINGS</div>
-            </div>
-            <div class="service-item">
-                <img src="./images/confetti.jpg" alt="Why Choose Us">
-                <div class="caption">WHY CHOOSE US?</div>
-            </div>
-        </div>
+        </form>
     </section>
 
     <!-- Footer Section -->
@@ -220,5 +252,26 @@
             document.getElementById("yearID").textContent = new Date().getFullYear();
         </script>
     </footer>
+
+    <!-- JavaScript for Step Navigation -->
+    <script>
+        const step1 = document.getElementById('step-1');
+        const step2 = document.getElementById('step-2');
+        const nextBtn = document.getElementById('next-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        const submitBtn = document.getElementById('submit-btn');
+
+        // Show Step 2 and hide Step 1
+        nextBtn.addEventListener('click', () => {
+            step1.style.display = 'none';
+            step2.style.display = 'block';
+        });
+
+        // Show Step 1 and hide Step 2
+        prevBtn.addEventListener('click', () => {
+            step2.style.display = 'none';
+            step1.style.display = 'block';
+        });
+    </script>
 </body>
 </html>
