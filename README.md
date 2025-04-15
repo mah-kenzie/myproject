@@ -24,8 +24,7 @@ Use the social media icons at the bottom of the page to contact us via WhatsApp,
 
 ## Screenshots
 Here are some visuals of the project:
-
-![My Home page](images/Screenshot_15-4-2025_143112_127.0.0.1.jpeg)
+![My Home page](Screenshot_15-4-2025_143637_127.0.0.1.jpeg)
 
 Caption: Home page of the website.
 
@@ -34,13 +33,13 @@ Caption: Home page of the website.
 Caption: Multi-step booking form with social media links
 
 ## TECHNOLOGIES USED
-HTML5 : For structuring the content.
-CSS3 : For styling and layout.
+HTML5 : For structuring the content.<br>
+CSS3 : For styling and layout.<br>
 Font Awesome : For social media icons.
 
 ## CONTACT
 For questions or feedback, feel free to reach out:
 
-Email: emeraldfidelis302@gmail.com
-WhatsApp: https://wa.me/elizabethaugustineele
+Email: emeraldfidelis302@gmail.com<br>
+WhatsApp: https://wa.me/elizabethaugustineele<br>
 Facebook: https://www.facebook.com/ElizabethFidelis
