@@ -36,8 +36,16 @@ body {
 }
 
 .logo img {
-  width: 100px; /* Adjust the size of the logo */
-  height: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a4a4a;
+  margin-left: 1rem;
 }
 
 .nav-links ul {
@@ -64,7 +72,7 @@ body {
 .hero {
   text-align: center;
   padding: 5rem 1rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/hero-bg.jpg');
+  background: #fbbfbe;
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -125,7 +133,7 @@ body {
 .footer {
   text-align: center;
   padding: 1rem;
-  background-color: #4a4a4a;
+  background-color: #fbbfbe;
   color: #fff;
 }
 
