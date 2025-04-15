@@ -27,8 +27,7 @@ Here are some visuals of the project:
 ![My Home page](Screenshot_15-4-2025_143637_127.0.0.1.jpeg)
 
 Caption: Home page of the website.
-
-![My Booking page](Screenshot_15-4-2025_143240_127.0.0.1.jpeg)
+![My Booking page](Screenshot_15-4-2025_14433_127.0.0.1.jpeg)
 
 Caption: Multi-step booking form with social media links
 
