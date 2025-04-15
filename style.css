@@ -8,7 +8,7 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #f5f8ff;
   color: #333;
   padding-top: 8rem; /* Add padding to account for the fixed header */
 }
@@ -35,7 +35,7 @@ body {
   padding: 1rem 0;
 }
 
-.logo img {
+#logo img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -43,9 +43,9 @@ body {
 
 .logo h1 {
   font-size: 1.5rem;
-  font-weight: 700;
+  display: flex;
   color: #4a4a4a;
-  margin-left: 1rem;
+  font: italic;
 }
 
 .nav-links ul {
@@ -72,10 +72,10 @@ body {
 .hero {
   text-align: center;
   padding: 5rem 1rem;
-  background: #fbbfbe;
+  background: #f5f8ff;
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #4a4a4a;
 }
 
 .hero h1 {
@@ -133,8 +133,8 @@ body {
 .footer {
   text-align: center;
   padding: 1rem;
-  background-color: #fbbfbe;
-  color: #fff;
+  background-color:#f5f8ff;
+  color: #777;
 }
 
 .footer p {
