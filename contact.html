@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Now</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Book Now - Party Advocate</title>
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+VegovVc2NIvXRSZvojyfF4/7kWZ1ASiM4H7rU=" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
@@ -104,7 +103,7 @@
         .form-step h3 {
             font-size: 1.25rem;
             font-weight: 600;
-            color: #e91e63;
+            color: #2d2622;
             margin-bottom: 1rem;
         }
 
@@ -130,7 +129,7 @@
         button,
         input[type="submit"] {
             padding: 1rem 2rem;
-            background-color: #e91e63;
+            background-color: #2d2622;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -142,7 +141,7 @@
 
         button:hover,
         input[type="submit"]:hover {
-            background-color: #d81b60;
+            background-color: #e91e63;
         }
 
         .disabled {
@@ -150,36 +149,36 @@
             pointer-events: none;
         }
 
-       /* Social Media Links */
-.social-links {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Align items vertically */
-    gap: 1rem; /* Add spacing between icons */
-    margin-top: 2rem;
-}
+        /* Social Media Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
 
-.social-links a {
-    text-decoration: none; /* Remove underline from links */
-}
+        .social-links a {
+            text-decoration: none;
+        }
 
-.social-links img {
-    width: 30px; /* Set a fixed width for the logos */
-    height: 30px; /* Set a fixed height for the logos */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    transition: transform 0.3s ease; /* Smooth hover effect */
-}
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
 
-.social-links img:hover {
-    transform: scale(1.2); /* Slightly enlarge the logo on hover */
-}
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
 
         /* Footer Styling */
         footer {
             text-align: center;
             padding: 2rem 0;
-            background-color:#f5f8ff;
-            color:  #777;
+            background-color: #f5f8ff;
+            color: #777;
         }
 
         footer p {
@@ -194,7 +193,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="./images/bf1e0ca8-3618-4215-97b5-d032b2c24c1e.png" alt="Party Advocate Logo"><h1>PARTY ADVOCATE</h1>
+                    <img src="./images/bf1e0ca8-3618-4215-97b5-d032b2c24c1e.png" alt="Party Advocate Logo">
+                    <h1>PARTY ADVOCATE</h1>
                 </div>
                 <nav class="nav-links">
                     <ul>
@@ -233,6 +233,9 @@
                 <h3>Step 2: Contact Details</h3>
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" name="phone" required>
+                
+                <label for="date">Location</label>
+                <input type="date" id="date" name="date" required>
 
                 <label for="date">Date</label>
                 <input type="date" id="date" name="date" required>
@@ -242,15 +245,24 @@
             </div>
         </form>
 
-        <!-- Social Media Links -->
-        <div class="social-links">
-            <!-- WhatsApp Link -->
-            <a href="https://wa.me/elizabethaugustineele" target="_blank" title="WhatsApp"><img src="./images/whatssss.jpg"><i class="fab fa-whatsapp"></i></a>
-            <!-- Facebook Link -->
-            <a href="https://www.facebook.com/ElizabethFidelis" target="_blank" title="Facebook"><img src="./images/facebook.png"><i class="fab fa-facebook"></i></a>
-            <!-- Email Link -->
-            <a href="mailto:emeraldfidelis302@gmail.com" title="Email"><img src="./images/gmailll.png"><i class="fas fa-envelope"></i></a>
-        </div>
+   <!-- Social Media Links -->
+<div class="social-links">
+    <!-- WhatsApp Link -->
+    <a href="https://wa.me/2348064352298?text=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Please%20provide%20more%20details." target="_blank" title="WhatsApp">
+        <img src="./images/whatssss.jpg" alt="WhatsApp Logo">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Facebook Link -->
+    <a href="https://www.facebook.com/ElizabethFidelis" target="_blank" title="Facebook">
+        <img src="./images/facebook.png" alt="Facebook Logo">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <!-- Email Link -->
+    <a href="mailto:emeraldfidelis302@gmail.com?subject=Booking%20Inquiry&body=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Please%20provide%20more%20details." title="Email">
+        <img src="./images/gmailll.png" alt="Email Logo">
+        <i class="fas fa-envelope"></i>
+    </a>
+</div>
     </section>
 
     <!-- Footer Section -->
