@@ -127,7 +127,8 @@
         }
 
         button,
-        input[type="submit"] {
+        .whatsapp-button {
+            display: inline-block;
             padding: 1rem 2rem;
             background-color: #2d2622;
             color: #fff;
@@ -137,10 +138,11 @@
             font-weight: 600;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            text-decoration: none; /* Remove underline for links */
         }
 
         button:hover,
-        input[type="submit"]:hover {
+        .whatsapp-button:hover {
             background-color: #e91e63;
         }
 
@@ -234,35 +236,36 @@
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" name="phone" required>
                 
-                <label for="date">Location</label>
-                <input type="date" id="date" name="date" required>
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required>
 
                 <label for="date">Date</label>
                 <input type="date" id="date" name="date" required>
 
                 <button type="button" id="prev-btn">Previous</button>
-                <input type="submit" value="Submit" id="submit-btn">
+                <!-- WhatsApp Submit Button -->
+                <a href="https://wa.me/2348064352298?text=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Please%20provide%20more%20details." target="_blank" class="whatsapp-button">Submit</a>
             </div>
         </form>
 
-   <!-- Social Media Links -->
-<div class="social-links">
-    <!-- WhatsApp Link -->
-    <a href="https://wa.me/2348064352298?text=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Please%20provide%20more%20details." target="_blank" title="WhatsApp">
-        <img src="./images/whatssss.jpg" alt="WhatsApp Logo">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    <!-- Facebook Link -->
-    <a href="https://www.facebook.com/ElizabethFidelis" target="_blank" title="Facebook">
-        <img src="./images/facebook.png" alt="Facebook Logo">
-        <i class="fab fa-facebook"></i>
-    </a>
-    <!-- Email Link -->
-    <a href="mailto:emeraldfidelis302@gmail.com?subject=Booking%20Inquiry&body=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Please%20provide%20more%20details." title="Email">
-        <img src="./images/gmailll.png" alt="Email Logo">
-        <i class="fas fa-envelope"></i>
-    </a>
-</div>
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/2348064352298?text=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Please%20provide%20more%20details." target="_blank" title="WhatsApp">
+                <img src="./images/whatssss.jpg" alt="WhatsApp Logo">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <!-- Facebook Link -->
+            <a href="https://www.facebook.com/ElizabethFidelis" target="_blank" title="Facebook">
+                <img src="./images/facebook.png" alt="Facebook Logo">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <!-- Email Link -->
+            <a href="mailto:emeraldfidelis302@gmail.com?subject=Booking%20Inquiry&body=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Please%20provide%20more%20details." title="Email">
+                <img src="./images/gmailll.png" alt="Email Logo">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
     </section>
 
     <!-- Footer Section -->
@@ -279,7 +282,6 @@
         const step2 = document.getElementById('step-2');
         const nextBtn = document.getElementById('next-btn');
         const prevBtn = document.getElementById('prev-btn');
-        const submitBtn = document.getElementById('submit-btn');
 
         // Show Step 2 and hide Step 1
         nextBtn.addEventListener('click', () => {

@@ -6,11 +6,11 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #f5f8ff;
-  color: #333;
-  padding-top: 8rem; /* Add padding to account for the fixed header */
+  background: linear-gradient(135deg, #f9f9f9, #e0eafc); /* Unified background gradient */
+  color: #333; /* Dark text for contrast */
+  padding-top: 8rem; /* Space for fixed header */
 }
 
 /* Container */
@@ -23,121 +23,118 @@ body {
   align-items: center;
 }
 
-/* Header Styling */
-.header {
-  position: fixed; /* Make the header static */
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  padding: 1rem 0;
-}
+    /* Header Styling */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      padding: 1rem 0;
+  }
 
-#logo img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
+  .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
 
-.logo h1 {
-  font-size: 1.5rem;
-  display: flex;
-  color: #4a4a4a;
-  font: italic;
-}
+  .logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+  }
 
-.nav-links ul {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
+  .logo h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #4a4a4a;
+      margin-left: 1rem;
+  }
 
-.nav-links a {
-  text-decoration: none;
-  color: #4a4a4a;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
+  .nav-links ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+  }
 
-.nav-links a:hover {
-  color: #333;
-}
+  .nav-links a {
+      text-decoration: none;
+      color: #4a4a4a;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+  }
 
+  .nav-links a:hover {
+      color: #e91e63; /* Pink hover effect */
+  }
 /* Hero Section */
-.hero {
+.hero-home {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 5rem 1rem;
-  background: #f5f8ff;
-  background-size: cover;
-  background-position: center;
-  color: #4a4a4a;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.hero h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-/* Gallery Section */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  background-image: url('./images/gift.jpg'); /* Your background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  color:#333 ; /* White text for contrast against the image */
   padding: 2rem;
 }
 
-.gallery a {
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* CTA Button Styling */
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: 135deg, #89aef2, #83a8ec; /* Accent color for button */
+  color: #6797ee; /* White text */
   text-decoration: none;
-  color: inherit;
-}
-
-.gallery figure {
-  text-align: center;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery figure:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-}
-
-.gallery img {
-  width: 100%; /* Ensure all images have the same width */
-  height: 200px; /* Set a fixed height for uniformity */
-  object-fit: cover; /* Crop images to fit the container without distortion */
-  border-radius: 10px;
-}
-
-.gallery figcaption {
   font-size: 1rem;
   font-weight: 600;
-  margin-top: 0.5rem;
-  color: #4a4a4a;
+  border-radius: 5px;
+  border: 2px solid transparent; /* Adds a border that changes on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.cta-button:hover {
+  background-color: #c8dafc; /* Slightly darker shade on hover */
+  border-color: #b6cffc; /* White border on hover */
+  transform: translateY(-2px); /* Lifts the button slightly */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.cta-button:active {
+  transform: translateY(0); /* Resets the button position when clicked */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Resets the shadow */
 }
 
 /* Footer Styling */
-.footer {
+footer {
   text-align: center;
-  padding: 1rem;
-  background-color:#f5f8ff;
-  color: #777;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: #f5f8ff;
+  color:  #777;
 }
 
-.footer p {
+footer p {
   margin: 0;
   font-size: 1rem;
 }

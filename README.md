@@ -26,7 +26,7 @@ Use the social media icons at the bottom of the page to contact us via WhatsApp,
 
 ## Screenshots
 Here are some visuals of the project:
-![My Home page](Screenshot_16-4-2025_143633_127.0.0.1.jpeg)
+![My Home page](Screenshot_22-4-2025_113425_127.0.0.1.jpeg)
 
 Caption: Home page of the website.
 ![My Booking page](Screenshot_22-4-2025_95256_127.0.0.1.jpeg)

@@ -77,59 +77,72 @@
             color: #e91e63; /* Pink hover effect */
         }
 
-       /* Services Section */
-.serve {
-    padding: 4rem 1rem;
-    text-align: center;
-    background-color: #f5f8ff;
-}
+        /* Services Section */
+        .serve {
+            padding: 4rem 1rem;
+            text-align: center;
+            background-color: #f5f8ff;
+        }
 
-.serve h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #4a4a4a;
-    margin-bottom: 2rem;
-}
+        .serve h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4a4a4a;
+            margin-bottom: 2rem;
+        }
 
-.service-item {
-    position: relative;
-    margin-bottom: 4rem;
-    overflow: hidden;
-    border-radius: 10px;
-}
+        .service-item {
+            position: relative;
+            margin-bottom: 4rem;
+            overflow: hidden;
+            border-radius: 10px;
+        }
 
-.service-item img {
-    width: 100%;
-    height: auto; /* Height adjusts automatically based on the width */
-    aspect-ratio: 16 / 9; /* Ensures a moderate height with a 16:9 aspect ratio */
-    object-fit: cover; /* Ensures images maintain aspect ratio without distortion */
-    border-radius: 10px;
-}
+        .service-item img {
+            width: 100%;
+            height: auto; /* Height adjusts automatically based on the width */
+            aspect-ratio: 16 / 9; /* Ensures a moderate height with a 16:9 aspect ratio */
+            object-fit: cover; /* Ensures images maintain aspect ratio without distortion */
+            border-radius: 10px;
+        }
 
-.caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 600;
-    transform: translateY(100%); /* Initially hidden below the image */
-    transition: transform 0.3s ease;
-}
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            transform: translateY(100%); /* Initially hidden below the image */
+            transition: transform 0.3s ease;
+        }
 
-.service-item:hover .caption {
-    transform: translateY(0); /* Slide up on hover */
-}
+        .service-item:hover .caption {
+            transform: translateY(0); /* Slide up on hover */
+        }
+
+        .caption a {
+            color: #fff; /* White text for links */
+            text-decoration: none; /* Remove underline */
+            font-size: 1.25rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .caption a:hover {
+            color: #e91e63; /* Pink hover effect for links */
+        }
+
         /* Footer Styling */
         footer {
             text-align: center;
             padding: 2rem 0;
             background-color: #f5f8ff;
-            color:  #777;
+            color: #777;
         }
 
         footer p {
@@ -166,23 +179,27 @@
         <div class="container">
             <div class="service-item">
                 <img src="./images/beautiful-pink-decorated-wedding-serving-with-centerpiece-lightening-candles.jpg" alt="Event Planning">
-                <div class="caption">EVENT PLANNING & DESIGN</div>
+                <div class="caption">
+                    <a href="contact.html">EVENT PLANNING & DESIGN</a>
+                </div>
             </div>
             <div class="service-item">
                 <img src="./images/low-angle-people-celebrating-wedding-nature.jpg" alt="Wedding Production">
-                <div class="caption">WEDDING PRODUCTIONS</div>
+                <div class="caption">
+                    <a href="contact.html">WEDDING PRODUCTIONS</a>
+                </div>
             </div>
             <div class="service-item">
                 <img src="./images/business-team-celebration-party-success-concept.jpg" alt="Corporate Event">
-                <div class="caption">CORPORATE EVENTS</div>
+                <div class="caption">
+                    <a href="contact.html">CORPORATE EVENTS</a>
+                </div>
             </div>
             <div class="service-item">
                 <img src="./images/couples-celebrating-birthday.jpg" alt="Luxury Party">
-                <div class="caption">LUXURY PARTIES & SOCIAL GATHERINGS</div>
-            </div>
-            <div class="service-item">
-                <img src="./images/clueless-doubtful-afro-american-woman-spreads-palms-with-hesitation-cannot-make-decision-wears-denim-jacket-top-has-puzzled-look-poses-vibrant-purple-wall-copy-space-area-aside.jpg" alt="Why Choose Us">
-                <div class="caption">WHY CHOOSE US?</div>
+                <div class="caption">
+                    <a href="contact.html">LUXURY PARTIES & SOCIAL GATHERINGS</a>
+                </div>
             </div>
         </div>
     </section>

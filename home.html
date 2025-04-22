@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Planner</title>
+    <title>Party Advocate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="party">
+<body>
     <!-- Header Section -->
     <header class="header">
         <div class="container">
-            <div id="logo">
+            <div class="logo">
                 <img src="./images/bf1e0ca8-3618-4215-97b5-d032b2c24c1e.png" alt="Party Advocate Logo">
                 <h1>PARTY ADVOCATE</h1>
             </div>
@@ -26,47 +27,25 @@
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="hero">
-        <h1>PARTY ADVOCATE</h1>
-        <h2>We create,<br>you celebrate</h2>
+    <!-- Hero Section -->
+    <main class="hero-home">
+        <div class="hero-content">
+            <h1>Welcome to Party Advocate</h1>
+            <p>We create unforgettable moments,<br>so you can focus on celebrating.</p>
+            <a href="services.html" class="cta-button">Explore Our Services <i class="fas fa-arrow-right"></i></a>
+        </div>
     </main>
-
-    <!-- Image Gallery -->
-    <section class="gallery">
-        <a href="birthday-party.html">
-            <figure>
-                <img src="./images/bhdddd.jpg" alt="Birthday Party Celebration">
-                <figcaption>Birthday Party</figcaption>
-            </figure>
-        </a>
-        <a href="wedding.html">
-            <figure>
-                <img src="./images/marry.jpeg" alt="Wedding Ceremony">
-                <figcaption>Wedding</figcaption>
-            </figure>
-        </a>
-        <a href="corporate-event.html">
-            <figure>
-                <img src="./images/ball.jpg" alt="Corporate Event">
-                <figcaption>Corporate Event</figcaption>
-            </figure>
-        </a>
-        <a href="karaoke-party.html">
-            <figure>
-                <img src="./images/Karaoke-birthday-party.jpg" alt="Karaoke Birthday Party">
-                <figcaption>Karaoke Party</figcaption>
-            </figure>
-        </a>
-    </section>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <p>&copy; <span id="yearID"></span> Party Advocate. All rights reserved.</p>
-        <script>
-            // Dynamically update the year
-            document.getElementById("yearID").textContent = new Date().getFullYear();
-        </script>
+        <div class="container">
+            <p>&copy; <span id="yearID"></span> Party Advocate. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- JavaScript to Dynamically Update Year -->
+    <script>
+        document.getElementById("yearID").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
