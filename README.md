@@ -27,10 +27,10 @@ Use the social media icons at the bottom of the page to contact us via WhatsApp,
 ## Screenshots
 Here are some visuals of the project:
 
-![alt text](images/Screenshot_22-4-2025_111559_127.0.0.1.jpeg)
+![my homepage](images/Screenshot_23-4-2025_111559_127.0.0.1.jpeg)
 Caption: Home page of the website.
 
-![alt text](images/Screenshot_22-4-2025_95256_127.0.0.1.jpeg)
+![my booking page](images/Screenshot_22-4-2025_95256_127.0.0.1.jpeg)
 Caption: Multi-step booking form with social media links
 
 ## TECHNOLOGIES USED
