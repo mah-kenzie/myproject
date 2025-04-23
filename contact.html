@@ -127,7 +127,7 @@
         }
 
         button,
-        .whatsapp-button {
+        .submit-button {
             display: inline-block;
             padding: 1rem 2rem;
             background-color: #2d2622;
@@ -138,42 +138,47 @@
             font-weight: 600;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            text-decoration: none; /* Remove underline for links */
         }
 
         button:hover,
-        .whatsapp-button:hover {
+        .submit-button:hover {
             background-color: #e91e63;
         }
-
-        .disabled {
-            opacity: 0.6;
-            pointer-events: none;
-        }
-
         /* Social Media Links */
-        .social-links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
 
-        .social-links a {
-            text-decoration: none;
-        }
+.social-links a {
+    text-decoration: none;
+    display: flex; /* Ensures proper alignment of icons */
+    align-items: center; /* Vertically centers the icons */
+}
 
-        .social-links img {
-            width: 30px;
-            height: 30px;
-            border-radius: 5px;
-            transition: transform 0.3s ease;
-        }
+.social-links img {
+    width: 30px; /* Adjust the size of the image icons */
+    height: 30px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
 
-        .social-links img:hover {
-            transform: scale(1.2);
-        }
+.social-links img:hover {
+    transform: scale(1.2); /* Slightly enlarges the image on hover */
+}
+
+.social-links i {
+    font-size: 24px; /* Adjust the size of Font Awesome icons */
+    color: #4a4a4a; /* Default icon color */
+    transition: color 0.3s ease;
+}
+
+.social-links i:hover {
+    color: #e91e63; /* Changes icon color on hover */
+}
 
         /* Footer Styling */
         footer {
@@ -243,8 +248,8 @@
                 <input type="date" id="date" name="date" required>
 
                 <button type="button" id="prev-btn">Previous</button>
-                <!-- WhatsApp Submit Button -->
-                <a href="https://wa.me/2348064352298?text=Hello%2C%20I%20am%20interested%20in%20your%20services.%20Please%20provide%20more%20details." target="_blank" class="whatsapp-button">Submit</a>
+                <!-- Submit Button -->
+                <button type="button" id="submit-btn" class="submit-button">Submit</button>
             </div>
         </form>
 
@@ -276,12 +281,13 @@
         </script>
     </footer>
 
-    <!-- JavaScript for Step Navigation -->
+    <!-- JavaScript for Step Navigation and Submit Popup -->
     <script>
         const step1 = document.getElementById('step-1');
         const step2 = document.getElementById('step-2');
         const nextBtn = document.getElementById('next-btn');
         const prevBtn = document.getElementById('prev-btn');
+        const submitBtn = document.getElementById('submit-btn');
 
         // Show Step 2 and hide Step 1
         nextBtn.addEventListener('click', () => {
@@ -293,6 +299,25 @@
         prevBtn.addEventListener('click', () => {
             step2.style.display = 'none';
             step1.style.display = 'block';
+        });
+
+        // Handle Submit Button Click
+        submitBtn.addEventListener('click', () => {
+            // Validate form fields
+            const firstName = document.getElementById('first-name').value.trim();
+            const lastName = document.getElementById('last-name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const location = document.getElementById('location').value.trim();
+            const date = document.getElementById('date').value.trim();
+
+            if (!firstName || !lastName || !email || !phone || !location || !date) {
+                alert('Please fill out all fields before submitting.');
+                return;
+            }
+
+            // Show success popup
+            alert('Your message has been sent successfully!');
         });
     </script>
 </body>
