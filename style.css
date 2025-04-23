@@ -126,16 +126,16 @@ body {
 
 /* Footer Styling */
 footer {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Ensures text is centered within child elements */
   padding: 2rem 0;
   background-color: #f5f8ff;
-  color:  #777;
+  color: #777;
 }
 
 footer p {
   margin: 0;
   font-size: 1rem;
-  text-align: center;
 }
