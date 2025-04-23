@@ -78,7 +78,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url('./images/gift.jpg'); /* Your background image */
+  background-image: url('./images/c85450fb-1291-41fa-acfd-ea840165bed2.png'); /* Your background image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-size: cover; /* Ensures the image covers the entire section */
   background-position: center; /* Centers the image */
@@ -101,8 +101,8 @@ body {
 .cta-button {
   display: inline-block;
   padding: 15px 30px;
-  background-color: 135deg, #89aef2, #83a8ec; /* Accent color for button */
-  color: #6797ee; /* White text */
+  background-color: 135deg, #7ca2e9, #83a8ec; /* Accent color for button */
+  color: #0f3e96; /* Brown text */
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
